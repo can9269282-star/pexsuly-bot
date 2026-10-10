@@ -757,7 +757,7 @@ def execute_spin(call):
                 return
             user["wheel_spins"] -= 1
         
-            pass
+            
         if user["pexsuly"] < 20:
             bot.answer_callback_query(call.id, "❌ 20 Pexsuly lazım!", show_alert=True)
             return
@@ -768,7 +768,7 @@ def execute_spin(call):
         user["vip_days"] += rw
         res = f"👑 **MÜKEMMEL ÖDÜL!** {rw} Günlük VIP kazandın!"
         
-            pass
+            
         rw = random.randint(60, 900)
         user["pexsuly"] += rw
         res = f"💎 **HARİKA ÖDÜL!** {rw} PEXSULY kazandın!"
